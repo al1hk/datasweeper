@@ -38,9 +38,36 @@ def set_theme():
 st.set_page_config(page_title="Data Sweeper", layout='wide')
 set_theme()
 
-st.title("🧹 Data Sweeper")
-st.markdown("### Easily clean, analyze, and convert your CSV and Excel files.")
+st.markdown("<h1 style='text-align: center;'>🧹 Data Sweeper</h1>", unsafe_allow_html=True)
+st.markdown("<h3 style='text-align: center;'>Easily clean, analyze, and convert your CSV and Excel files.</h3>", unsafe_allow_html=True)
 
+# ---------------- Growth Mindset Section ---------------- #
+st.markdown("<h2 style='text-align: center;'>🚀 Growth Mindset Challenge: Web App with Streamlit</h2>", unsafe_allow_html=True)
+
+st.markdown("""
+### 🌱 What is a Growth Mindset?
+A **growth mindset** is the belief that abilities and intelligence can be developed through **hard work, perseverance, and learning from mistakes**. This concept, popularized by **Carol Dweck**, challenges the idea that our skills are fixed. Instead, it emphasizes that every challenge is an opportunity to learn and grow.
+
+### 💡 Why Adopt a Growth Mindset?
+- **🚀 Embrace Challenges:** See obstacles as opportunities to grow, not as setbacks.
+- **📖 Learn from Mistakes:** Mistakes are a natural part of learning—each error is a stepping stone to improvement.
+- **💪 Persist Through Difficulties:** Stay determined even when things get tough.
+- **🎉 Celebrate Effort:** Recognize the effort you put in, not just the outcome.
+- **🔎 Keep an Open Mind:** Stay curious and be willing to adjust your approach.
+
+### 🔥 How Can You Practice a Growth Mindset?
+✅ **Set Learning Goals:** Focus on developing skills rather than just achieving high grades.  
+✅ **Reflect on Your Learning:** Regularly think about what you’ve learned from successes and challenges.  
+✅ **Seek Feedback:** Embrace constructive criticism to improve.  
+✅ **Stay Positive:** Believe in your ability to grow and encourage others to do the same.  
+
+Remember, your journey isn’t just about proving your intelligence—it’s about developing it. 🌟  
+Every step, whether forward or backward, is part of the learning process. **Embrace your potential and keep striving for growth!** 🚀
+
+_Wishing you success on your journey of continuous improvement!_ ✨
+""", unsafe_allow_html=True)
+
+# ---------------- File Upload Section ---------------- #
 uploaded_files = st.file_uploader(
     "📂 Upload your files (CSV or Excel)",
     type=["csv", "xlsx"],
